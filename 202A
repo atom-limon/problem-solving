@@ -1,0 +1,17 @@
+//start code here
+	map<char,int> mp;
+	string str;
+	cin>>str;
+	for(auto i=0;i<str.length();i++){
+		mp[str[i]]++;
+	}
+	 map<char,int>:: iterator it;
+	// for(it=mp.begin();it!=mp.end();it++){
+	// 	cout<<it->first<<" "<<it->second<<endl;
+	// }
+	it=prev(mp.end());
+	for(auto i=0;i<it->second;i++){
+		cout<<it->first;
+	}
+	cout<<endl;
+	return 0;
