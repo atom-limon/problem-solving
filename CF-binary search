@@ -1,0 +1,19 @@
+//start code here
+	int test;
+	cin>>test;
+	while(test--){
+		int c,m,x;
+		cin>>c>>m>>x;
+		int ans=min(c,m);
+		int has=max(c,m)+x;
+		 if(ans*2<=has)	cout<<ans<<endl;
+		 else{
+		 	int res=(has/2);
+		 	ans=ans-res+(has%2);
+		 	res=res+(ans/3);
+		 	cout<<res<<endl;
+		 }
+ 
+	}
+ 
+	return 0;
